@@ -1,0 +1,1402 @@
+{
+    "type": "bundle",
+    "id": "bundle--b2178830-2131-43e8-bd1e-205418de646a",
+    "objects": [
+        {
+            "id": "identity--b7dd2019-174b-513e-8549-e20dd91802fb",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "CERT-Bund",
+            "created": "2025-07-02T08:56:05.134Z",
+            "modified": "2026-04-03T14:17:24.284Z",
+            "x_opencti_reliability": "B - Usually reliable",
+            "x_opencti_id": "144b7540-03d3-4508-90a8-639e434ccca8",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752",
+            "created": "2026-03-10T10:03:26.773Z",
+            "definition_type": "data-marking",
+            "name": "nis2 vertrouwelijk - allowed to share with nis2 organizations",
+            "definition": {
+                "data-marking": "nis2 vertrouwelijk - allowed to share with nis2 organizations"
+            }
+        },
+        {
+            "id": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-01T07:50:52.000Z",
+            "modified": "2026-06-05T14:14:20.580Z",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "pattern": "[email-addr:value = 'office.dsns.dp@gmail.com']",
+            "name": "office.dsns.dp@gmail.com",
+            "description": "PhantomMail: E-mail address used for spearphishing activity",
+            "valid_from": "2026-06-02T09:39:49.000Z",
+            "valid_until": "2027-06-02T09:39:49.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": true,
+            "x_opencti_main_observable_type": "Email-Addr",
+            "x_opencti_observable_values": [
+                {
+                    "type": "Email-Addr",
+                    "value": "office.dsns.dp@gmail.com",
+                    "hashes": null
+                }
+            ],
+            "labels": [
+                "admiralty-scale:information-credibility=\"2\"",
+                "admiralty-scale:source-reliability=\"b\"",
+                "apt",
+                "misp-galaxy:country=\"netherlands\"",
+                "misp-galaxy:country=\"ukraine\"",
+                "misp-galaxy:mitre-attack-pattern=\"audio capture - t1123\"",
+                "misp-galaxy:mitre-attack-pattern=\"data from local system - t1005\"",
+                "misp-galaxy:mitre-attack-pattern=\"obfuscated files or information - t1027\"",
+                "misp-galaxy:mitre-attack-pattern=\"remote services - t1021\"",
+                "misp-galaxy:mitre-attack-pattern=\"screen capture - t1113\"",
+                "misp-galaxy:mitre-attack-pattern=\"spearphishing attachment - t1193\"",
+                "misp-galaxy:mitre-attack-pattern=\"spearphishing link - t1192\"",
+                "misp-galaxy:mitre-attack-pattern=\"trusted relationship - t1199\"",
+                "misp-galaxy:mitre-attack-pattern=\"video capture - t1125\"",
+                "misp-galaxy:ransomware=\"ailock\"",
+                "misp-galaxy:ransomware=\"bravox\"",
+                "misp-galaxy:ransomware=\"genesis\"",
+                "misp-galaxy:ransomware=\"gunra\"",
+                "misp-galaxy:ransomware=\"inc ransom\"",
+                "misp-galaxy:ransomware=\"qilin\"",
+                "misp-galaxy:ransomware=\"termite ransomware\"",
+                "misp-galaxy:ransomware=\"worldleaks\"",
+                "misp-galaxy:sector=\"government, administration\"",
+                "misp-galaxy:sector=\"military\"",
+                "misp-galaxy:sector=\"transport\"",
+                "misp-galaxy:threat-actor=\"coinbase cartel\"",
+                "misp-galaxy:threat-actor=\"dragonforce\"",
+                "misp-galaxy:threat-actor=\"infrastructure destruction squad\"",
+                "misp-galaxy:threat-actor=\"kairos\"",
+                "misp-galaxy:threat-actor=\"krybit\"",
+                "misp-galaxy:threat-actor=\"lapsus\"",
+                "misp-galaxy:threat-actor=\"noname057(16)\"",
+                "misp-galaxy:threat-actor=\"the gentlemen\"",
+                "misp-galaxy:threat-actor=\"z-pentest alliance\"",
+                "ncsc-knowngood-status:out-of-scope",
+                "ncsc-knowngood-status:processed",
+                "ncsc-nl-ndn:feed=\"selected\"",
+                "ncsc-qc-status:processed",
+                "ncsc-reviewed:automatic",
+                "ncsc-severity:generic",
+                "osint",
+                "osint:source-type=\"blog-post\"",
+                "pap:white",
+                "tlp:clear",
+                "tlp:green",
+                "workflow:state=\"complete\""
+            ],
+            "x_opencti_id": "d61e1268-26cb-42f0-8e87-d62378c893bf",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "created_by_ref": "identity--b7dd2019-174b-513e-8549-e20dd91802fb",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "RCDC",
+            "created": "2025-07-09T08:19:05.830Z",
+            "modified": "2026-02-11T08:08:12.876Z",
+            "x_opencti_reliability": "D - Not usually reliable",
+            "x_opencti_id": "6d82b4cd-1aab-434d-a61d-f33a1fcb0e14",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "relationship--01cc9bb1-8be6-5890-9c53-34113ede4c6f",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.894Z",
+            "modified": "2026-06-02T11:07:07.478Z",
+            "x_opencti_id": "4ac62051-97dc-4088-a973-e21e12e30972",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--5647ff00-0651-5bfe-b569-fbdbb619ddad"
+        },
+        {
+            "id": "relationship--0f152974-4c5c-5609-854e-549b4ffe0554",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.894Z",
+            "modified": "2026-06-02T11:07:05.085Z",
+            "x_opencti_id": "add2e858-76f8-4707-8e73-6a1aab305901",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--1a8ae26a-44ce-5c65-a75f-a9df8aa479c6"
+        },
+        {
+            "id": "relationship--110f44c0-7ab2-57a2-94de-562f1b3701eb",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.894Z",
+            "modified": "2026-06-02T11:07:07.845Z",
+            "x_opencti_id": "d8124bab-64e4-47dd-8c80-6b54143c4d31",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--7be9da13-ca20-5671-9efc-88966649f714"
+        },
+        {
+            "id": "relationship--274e4ac0-f8a1-5b52-9cbe-662ad6748b38",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.895Z",
+            "modified": "2026-06-02T11:07:07.827Z",
+            "x_opencti_id": "0857f679-a6c7-47df-9c5d-f5dd3a50a674",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--85bda98c-d50a-52d8-820b-5e347db6ccc8"
+        },
+        {
+            "id": "relationship--35778cca-8107-5771-b1c2-9bd9457abc38",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.897Z",
+            "modified": "2026-06-02T11:07:08.905Z",
+            "x_opencti_id": "7139ffb1-f978-4038-bd3d-9f105df699a1",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--ec220d05-8d25-5de3-97ba-7b94a5aaf16e"
+        },
+        {
+            "id": "relationship--35d77284-0d3e-55ce-b543-bb5ef523950c",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.897Z",
+            "modified": "2026-06-02T11:07:06.735Z",
+            "x_opencti_id": "4acfdb8f-4ef0-46b8-a0c8-003fb34bb510",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--628a9ba8-e4e5-5de8-aae8-2f1eb548eb1a"
+        },
+        {
+            "id": "relationship--5a076f04-6618-53d4-bb65-ad9e18fcba51",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.893Z",
+            "modified": "2026-06-02T11:07:04.968Z",
+            "x_opencti_id": "cd4ae2ff-06f8-446f-8961-61434fd0377f",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--b75853f8-237a-508c-89f7-8eccf6ec32e3"
+        },
+        {
+            "id": "relationship--66a028a0-196f-505a-a67c-b447993eec3d",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.898Z",
+            "modified": "2026-06-02T11:07:08.410Z",
+            "x_opencti_id": "77540e3e-9b92-4d8d-8eef-7bc08e27b38e",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--c07cc65b-d18a-54e8-a14c-75289e7c4e31"
+        },
+        {
+            "id": "relationship--789a3c82-0b66-597f-b1a9-47f5acd7b0b3",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.896Z",
+            "modified": "2026-06-02T11:07:08.807Z",
+            "x_opencti_id": "d46b9c24-22de-490f-9bec-bd03a0e29167",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--c07cc65b-d18a-54e8-a14c-75289e7c4e31"
+        },
+        {
+            "id": "relationship--7d3c1298-9cdf-5793-8f44-915aefdef80b",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.895Z",
+            "modified": "2026-06-02T11:07:06.296Z",
+            "x_opencti_id": "fb2c3231-9f37-4f73-9b94-3e89a4d22e5b",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--aef0fe87-a36d-522f-8c23-3d495c0c910c"
+        },
+        {
+            "id": "relationship--9428b9f5-ad25-53fb-b02a-8e8fa3940481",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.898Z",
+            "modified": "2026-06-02T11:07:11.362Z",
+            "x_opencti_id": "042a8cbf-2b15-44da-8c08-490cad8cbdef",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--3a329f11-31cd-50ab-864c-a6b2cd4379f3"
+        },
+        {
+            "id": "relationship--98dc432d-317f-545e-b00e-638ace96d22b",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.896Z",
+            "modified": "2026-06-02T11:07:06.400Z",
+            "x_opencti_id": "bc203bff-433a-404d-9bd1-39181c154f5a",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--69ba39d7-bd84-5230-850b-c7c7b176f491"
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:AMBER+STRICT",
+            "definition": {
+                "tlp": "amber+strict"
+            }
+        },
+        {
+            "id": "relationship--9f1927f0-a2fb-5815-8a98-a176c8b85aa7",
+            "spec_version": "2.1",
+            "relationship_type": "based-on",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-01T09:11:56.866Z",
+            "modified": "2026-06-01T09:13:14.294Z",
+            "labels": [
+                "ncsc-reviewed:automatic",
+                "ncsc-severity:generic"
+            ],
+            "x_opencti_id": "e453aa3f-9349-4978-8314-4bb88b0128af",
+            "x_opencti_type": "based-on",
+            "type": "relationship",
+            "created_by_ref": "identity--b7dd2019-174b-513e-8549-e20dd91802fb",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "email-addr--e6847416-c31b-5f8f-8781-c8e2d5b1d5aa"
+        },
+        {
+            "id": "relationship--b51fe95e-cfee-5144-99e8-ef4355ddba24",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.898Z",
+            "modified": "2026-06-02T11:07:09.984Z",
+            "x_opencti_id": "8374cfa2-2f7a-4e30-abba-d7f4677ddc73",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--1a8ae26a-44ce-5c65-a75f-a9df8aa479c6"
+        },
+        {
+            "id": "relationship--b76e4eb2-d92e-5893-9190-cab6e4320fad",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.898Z",
+            "modified": "2026-06-02T11:07:06.988Z",
+            "x_opencti_id": "a740840e-de46-4518-a69d-1110c39b52a0",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--2ebede2c-ae19-5853-bde6-467f453312c8"
+        },
+        {
+            "id": "relationship--d12495d3-4adc-57e8-863e-0455f01fba6e",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.897Z",
+            "modified": "2026-06-02T11:07:07.643Z",
+            "x_opencti_id": "914351e9-955b-49a9-aeb6-4ce5b33406e2",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--5b434452-8bd4-5ffc-8648-3c9be9242b3e"
+        },
+        {
+            "id": "relationship--d2063c8a-cb4c-59f0-8d15-ca956727f037",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.894Z",
+            "modified": "2026-06-02T11:07:05.927Z",
+            "x_opencti_id": "553fd82e-33a6-4443-aaf2-0766b9473bf8",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--5e9a20dd-7d0f-5ee3-8e58-26b0c7214ef0"
+        },
+        {
+            "id": "relationship--d660a4bf-4744-5679-bbcf-d87f2ddcb665",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.895Z",
+            "modified": "2026-06-02T11:07:06.430Z",
+            "x_opencti_id": "02fb2251-24a8-418f-b381-8190174624ac",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242"
+        },
+        {
+            "id": "relationship--e251e1ce-5cd4-5d52-b8fe-1ac747231468",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.895Z",
+            "modified": "2026-06-02T11:07:06.297Z",
+            "x_opencti_id": "b5dfe7fb-9a0d-4263-bf6e-0fad781e737a",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "intrusion-set--60892414-c217-518f-a911-143cd1900676"
+        },
+        {
+            "id": "relationship--e37ad4bb-cc67-571f-89fa-eed1cea1f234",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.897Z",
+            "modified": "2026-06-02T11:07:08.186Z",
+            "x_opencti_id": "85214117-4ee8-4358-91a8-99045272c550",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--3409253a-1353-570e-bdc7-04672ddfa7ff"
+        },
+        {
+            "id": "relationship--f604f203-9db1-577b-97a0-b59679f19345",
+            "spec_version": "2.1",
+            "relationship_type": "indicates",
+            "description": "E-mail address used for spearphishing activity",
+            "revoked": false,
+            "confidence": 60,
+            "lang": "en",
+            "created": "2026-06-02T11:05:50.896Z",
+            "modified": "2026-06-02T11:07:07.071Z",
+            "x_opencti_id": "c1889d37-079d-4367-9f64-11d935a444ad",
+            "x_opencti_type": "indicates",
+            "type": "relationship",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ],
+            "source_ref": "indicator--53528b8e-33e8-59fc-8ceb-7838fc187242",
+            "target_ref": "malware--0a6b2c4c-011e-5833-b822-b367c193983e"
+        },
+        {
+            "id": "identity--09b4094d-ee84-5ce1-a37a-eaa53c1a7aa2",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "CERT BE_4754",
+            "created": "2025-01-28T13:07:58.380Z",
+            "modified": "2026-05-27T13:49:37.756Z",
+            "x_opencti_reliability": "D - Not usually reliable",
+            "x_opencti_id": "5c636213-7ba6-4b79-a093-8461a9bd223c",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0",
+            "created": "2026-03-25T13:20:52.163Z",
+            "definition_type": "data-marking",
+            "name": "Rijksoverheid Vertrouwelijk - Allowed to share with Rijksoverheid",
+            "definition": {
+                "data-marking": "rijksoverheid vertrouwelijk - allowed to share with rijksoverheid"
+            }
+        },
+        {
+            "id": "intrusion-set--5647ff00-0651-5bfe-b569-fbdbb619ddad",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2025-07-15T14:06:40.978Z",
+            "modified": "2026-04-22T00:25:07.692Z",
+            "name": "DragonForce",
+            "description": "DragonForce is a hacktivist group based in Malaysia that has been involved in cyberattacks targeting government institutions and commercial organizations in India. They have also targeted websites affiliated with Israel and have shown support for pro-Palestinian causes. The group has been observed using defacement attacks, distributed denial-of-service attacks, and data leaks as part of their campaigns. DragonForce Malaysia has demonstrated an ability to adapt and evolve their tactics over time.",
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "0a41af95-6e34-4c7f-9780-2c00d33af524",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--09b4094d-ee84-5ce1-a37a-eaa53c1a7aa2",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "intrusion-set--1a8ae26a-44ce-5c65-a75f-a9df8aa479c6",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.154Z",
+            "modified": "2026-06-02T11:05:56.205Z",
+            "name": "Krybit",
+            "description": "Krybit is a ransomware group that operates as a ransomware-as-a-service provider, offering affiliates 80% of ransom proceeds in exchange for technical support and a malware suite. The group has claimed attacks on various organizations across multiple countries, including asesoriauriel.com in Spain and fraper.com in Spain, without disclosing the volume of data exfiltrated. Krybit is currently engaged in a turf war with another group, 0APT, and has been accused of fabricating victim claims. Their leak site has been used to publish compromised data and to issue threats to rivals and victims alike.",
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "7620eade-7be0-40da-9a25-52a34e5f0545",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "intrusion-set--7be9da13-ca20-5671-9efc-88966649f714",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.154Z",
+            "modified": "2026-06-02T11:05:56.152Z",
+            "name": "Kairos",
+            "description": "Kairos is an extortion group that emerged with a data-leak site on 13 November 2024, claiming attacks against six organizations, primarily in the US healthcare sector. The group is financially motivated, demanding Bitcoin payments for the secure deletion of stolen files and threatening to leak data if victims do not comply. While no specific TTPs are publicly known, common techniques among extortion groups include phishing and scanning for exposed internet-facing devices. There is a potential link to a user on a Russian-language cybercriminal forum who shares a post-exploitation script, but attribution remains uncertain.",
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "1a471549-3c59-4857-8bfa-b18e43c12eb8",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "identity--481369ba-a340-53fd-a411-314170da173d",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "Dragos",
+            "description": "Dragos WorldView provides actionable information and recommendations on threats to operations technology (OT) environments.",
+            "contact_information": "https://www.dragos.com/us/contact",
+            "x_opencti_aliases": [
+                "Dragos Inc."
+            ],
+            "created": "2025-07-16T11:21:36.789Z",
+            "modified": "2026-04-23T12:56:52.792Z",
+            "x_opencti_organization_type": "vendor",
+            "x_opencti_reliability": "B - Usually reliable",
+            "x_opencti_id": "a4ea0502-c52f-4b29-bbcb-a5a8e9cbee5a",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "intrusion-set--85bda98c-d50a-52d8-820b-5e347db6ccc8",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2025-07-17T11:22:55.643Z",
+            "modified": "2026-04-20T06:32:24.937Z",
+            "name": "NoName057(16)",
+            "description": "NoName057(16) is performing DDoS attacks on websites belonging to governments, news agencies, armies, suppliers, telecommunications companies, transportation authorities, financial institutions, and more in Ukraine and neighboring countries supporting Ukraine, like Ukraine itself, Estonia, Lithuania, Norway, and Poland.",
+            "aliases": [
+                "NoName057",
+                "NoName05716",
+                "05716nnm",
+                "Nnm05716"
+            ],
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "e142b73d-0c4c-4460-b5c2-9c933333540d",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--481369ba-a340-53fd-a411-314170da173d",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37"
+            ]
+        },
+        {
+            "id": "identity--b2a8fbec-b4fb-563c-a052-7b5b4ab23070",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "Recorded Future",
+            "created": "2026-04-20T11:33:37.373Z",
+            "modified": "2026-06-04T07:04:28.840Z",
+            "x_opencti_reliability": "B - Usually reliable",
+            "x_opencti_id": "74d93dd8-15f8-4ef4-9ce6-ec65fbb76498",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "malware--ec220d05-8d25-5de3-97ba-7b94a5aaf16e",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-04-20T11:37:26.173Z",
+            "modified": "2026-06-02T11:05:53.415Z",
+            "name": "Termite Ransomware",
+            "description": "Ben Hunter discovered a new ransomware called Termite Ransomware. When encrypting a computer it will append the .aaaaaa extension to encrypted files.",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "4173cf14-c51d-4a42-a29d-22b561c4e230",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--b2a8fbec-b4fb-563c-a052-7b5b4ab23070",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "identity--ba6a107e-4a66-5fd3-833c-43318ba163fd",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "Intel 471 Inc.",
+            "created": "2022-01-01T00:00:00.000Z",
+            "modified": "2026-04-23T14:30:25.578Z",
+            "x_opencti_organization_type": "vendor",
+            "x_opencti_reliability": "B - Usually reliable",
+            "x_opencti_id": "3b1ae5e1-ff98-49a1-ada1-332ba5352058",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:AMBER",
+            "definition": {
+                "tlp": "amber"
+            }
+        },
+        {
+            "id": "malware--628a9ba8-e4e5-5de8-aae8-2f1eb548eb1a",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-02-13T04:35:15.113Z",
+            "modified": "2026-06-02T11:05:53.315Z",
+            "name": "bravox",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "6cef2d40-962b-4285-8b08-156e51787579",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--ba6a107e-4a66-5fd3-833c-43318ba163fd",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "intrusion-set--b75853f8-237a-508c-89f7-8eccf6ec32e3",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.154Z",
+            "modified": "2026-06-02T11:05:56.736Z",
+            "name": "Coinbase Cartel",
+            "description": "Coinbase Cartel is a ransomware threat actor that emerged in September 2025, focusing on data exfiltration rather than encryption, and has claimed over 60 victims, primarily in the healthcare, technology, and transportation sectors. The group employs TTPs such as social engineering, credential harvesting, and collaboration with Initial Access Brokers to gain initial access. They operate a data leak site where they publish victim names and issue ransom demands, requiring payment via Bitcoin.",
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "f7abb5b5-3cca-44b2-95aa-99efd192d84d",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "malware--c07cc65b-d18a-54e8-a14c-75289e7c4e31",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-02-13T04:35:15.113Z",
+            "modified": "2026-06-02T11:05:53.400Z",
+            "name": "inc ransom",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "88ffa997-874d-4901-91c4-a0fabe95452c",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--ba6a107e-4a66-5fd3-833c-43318ba163fd",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "identity--f11b0831-e7e6-5214-9431-ccf054e53e94",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "The MITRE Corporation",
+            "created": "2017-06-01T00:00:00.000Z",
+            "modified": "2026-05-28T07:39:29.329Z",
+            "x_opencti_reliability": "A - Completely reliable",
+            "x_opencti_id": "34929a4a-a3ef-4371-ae42-7a4069fc08a7",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "intrusion-set--c07cc65b-d18a-54e8-a14c-75289e7c4e31",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2024-06-06T17:16:38.704Z",
+            "modified": "2026-05-27T07:08:52.784Z",
+            "name": "INC Ransom",
+            "description": "[INC Ransom](https://attack.mitre.org/groups/G1032) is a ransomware and data extortion threat group associated with the deployment of [INC Ransomware](https://attack.mitre.org/software/S1139) that has been active since at least July 2023. [INC Ransom](https://attack.mitre.org/groups/G1032)  has targeted organizations worldwide most commonly in the industrial, healthcare, and education sectors in the US and Europe.(Citation: Bleeping Computer INC Ransomware March 2024)(Citation: Cybereason INC Ransomware November 2023)(Citation: Secureworks GOLD IONIC April 2024)(Citation: SentinelOne INC Ransomware)",
+            "aliases": [
+                "GOLD IONIC"
+            ],
+            "external_references": [
+                {
+                    "source_name": "Cybereason INC Ransomware November 2023",
+                    "description": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+                    "url": "https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+                },
+                {
+                    "source_name": "Bleeping Computer INC Ransomware March 2024",
+                    "description": "Toulas, B. (2024, March 27). INC Ransom threatens to leak 3TB of NHS Scotland stolen data. Retrieved June 5, 2024.",
+                    "url": "https://www.bleepingcomputer.com/news/security/inc-ransom-threatens-to-leak-3tb-of-nhs-scotland-stolen-data/"
+                },
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/groups/G1032",
+                    "external_id": "G1032"
+                },
+                {
+                    "source_name": "SentinelOne INC Ransomware",
+                    "description": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+                    "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+                },
+                {
+                    "source_name": "Secureworks GOLD IONIC April 2024",
+                    "description": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+                    "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+                }
+            ],
+            "x_opencti_id": "540665b2-197b-4e77-9a6f-730da77ed9bb",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--f11b0831-e7e6-5214-9431-ccf054e53e94",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "intrusion-set--aef0fe87-a36d-522f-8c23-3d495c0c910c",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2025-08-18T03:00:40.529Z",
+            "modified": "2026-06-02T11:05:53.075Z",
+            "name": "Z-Pentest Alliance",
+            "description": "Z-Pentest Alliance is a pro-Russian hacktivist group known for targeting industrial control systems and operational technology systems, particularly in Italy and Israel. The group has claimed responsibility for various attacks, including gaining control of a water supply management system and disrupting aviation authorities' websites. Z-Pentest Alliance operates within a larger alliance of hacktivist groups, often collaborating on politically motivated operations, including DDoS campaigns. The group has been linked to the GRU and is associated with the NoName057 group, sharing tools and intelligence.",
+            "aliases": [
+                "Z-Pentest"
+            ],
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "e3164287-55d5-4b46-aeac-cceeb4747f5b",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--481369ba-a340-53fd-a411-314170da173d",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37"
+            ]
+        },
+        {
+            "id": "identity--0303206b-ec74-5e9e-81df-e6532e9c1e91",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "Abuse.ch",
+            "description": "abuse.ch is operated by a random swiss guy fighting malware for non-profit, running a couple of projects helping internet service providers and network operators protecting their infrastructure from malware.",
+            "created": "2025-01-22T11:44:41.715Z",
+            "modified": "2026-05-27T13:49:37.796Z",
+            "x_opencti_organization_type": "vendor",
+            "x_opencti_reliability": "C - Fairly reliable",
+            "x_opencti_id": "41f21c61-fae1-4c76-9864-cb76d3fe0bd3",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "malware--3a329f11-31cd-50ab-864c-a6b2cd4379f3",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2025-07-04T00:36:47.709Z",
+            "modified": "2026-06-02T11:05:52.768Z",
+            "name": "gunra",
+            "description": "GUNRA is a ransomware written in C that utilizes the ChaCha-20 algorithm for file encryption. The malware appends the .ENCRT extension to encrypted files.",
+            "malware_types": [
+                "ransomware"
+            ],
+            "is_family": true,
+            "labels": [
+                "platform:verity471",
+                "ransomware"
+            ],
+            "external_references": [
+                {
+                    "source_name": "[GTI] Malware Family GUNRA",
+                    "description": "Google Threat Intelligence Malware Family Link",
+                    "url": "https://www.virustotal.com/gui/collection/malware--9664bceb-3450-55f0-bfe1-f9fddaf70ccd"
+                }
+            ],
+            "x_opencti_id": "2366540b-258d-4b9a-8187-2a5adf57381b",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--0303206b-ec74-5e9e-81df-e6532e9c1e91",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "identity--eb481938-f652-5a05-b1a5-9323d3d958bb",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "ESET",
+            "created": "2025-03-18T15:23:02.803Z",
+            "modified": "2026-02-08T21:07:05.123Z",
+            "x_opencti_organization_type": "vendor",
+            "x_opencti_reliability": "B - Usually reliable",
+            "x_opencti_id": "bf337180-5609-457c-97f5-aa338d118ece",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "intrusion-set--69ba39d7-bd84-5230-850b-c7c7b176f491",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2025-09-29T20:01:50.272Z",
+            "modified": "2026-04-20T06:21:34.085Z",
+            "name": "Water Galura",
+            "description": "[Water Galura](https://attack.mitre.org/groups/G1050) are the operators of the [Qilin](https://attack.mitre.org/software/S1242) Ransomware-as-a-Service (RaaS) who handle payload generation, ransom negotiations, and the publication of stolen data for [Qilin](https://attack.mitre.org/software/S1242) affilates recruited on Russian cybercrime forums. [Water Galura](https://attack.mitre.org/groups/G1050) have been active since at least 2022 and use a double extortion model where they demand payment for providing decryption keys and for refraining from publishing the stolen data to their leak site.(Citation: BushidoToken Qilin RaaS JUN 2024)(Citation: Sophos Qilin MSP APR 2025)",
+            "aliases": [
+                "Spikey Scorpius",
+                "GOLD FEATHER",
+                "Qilin"
+            ],
+            "labels": [
+                "intrusion-set",
+                "ncsc-reviewed:automatic"
+            ],
+            "external_references": [
+                {
+                    "source_name": "BushidoToken Qilin RaaS JUN 2024",
+                    "description": "Thomas, W. (2024, June 12). Tracking Adversaries: The Qilin RaaS. Retrieved September 26, 2025.",
+                    "url": "https://blog.bushidotoken.net/2024/06/tracking-adversaries-qilin-raas.html"
+                },
+                {
+                    "source_name": "Sophos Qilin MSP APR 2025",
+                    "description": "Bradshaw, A. et al. (2025, April 1). Qilin affiliates spear-phish MSP ScreenConnect admin, targeting customers downstream. Retrieved September 26, 2025.",
+                    "url": "https://news.sophos.com/en-us/2025/04/01/sophos-mdr-tracks-ongoing-campaign-by-qilin-affiliates-targeting-screenconnect/"
+                },
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/groups/G1050",
+                    "external_id": "G1050"
+                }
+            ],
+            "x_opencti_id": "ebb6f820-bb5d-43ce-8304-53acbb3d3714",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--eb481938-f652-5a05-b1a5-9323d3d958bb",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37"
+            ]
+        },
+        {
+            "id": "email-addr--e6847416-c31b-5f8f-8781-c8e2d5b1d5aa",
+            "spec_version": "2.1",
+            "x_opencti_description": "PhantomMail: E-mail address used for spearphishing activity",
+            "x_opencti_score": 60,
+            "value": "office.dsns.dp@gmail.com",
+            "x_opencti_id": "07e04d6b-4bc2-48df-ae86-5e28f513342a",
+            "x_opencti_type": "Email-Addr",
+            "type": "email-addr",
+            "x_opencti_created_by_ref": "identity--b7dd2019-174b-513e-8549-e20dd91802fb",
+            "x_opencti_labels": [
+                "admiralty-scale:information-credibility=\"2\"",
+                "admiralty-scale:source-reliability=\"b\"",
+                "apt",
+                "misp-galaxy:country=\"netherlands\"",
+                "misp-galaxy:country=\"ukraine\"",
+                "misp-galaxy:mitre-attack-pattern=\"audio capture - t1123\"",
+                "misp-galaxy:mitre-attack-pattern=\"data from local system - t1005\"",
+                "misp-galaxy:mitre-attack-pattern=\"obfuscated files or information - t1027\"",
+                "misp-galaxy:mitre-attack-pattern=\"remote services - t1021\"",
+                "misp-galaxy:mitre-attack-pattern=\"screen capture - t1113\"",
+                "misp-galaxy:mitre-attack-pattern=\"spearphishing attachment - t1193\"",
+                "misp-galaxy:mitre-attack-pattern=\"spearphishing link - t1192\"",
+                "misp-galaxy:mitre-attack-pattern=\"trusted relationship - t1199\"",
+                "misp-galaxy:mitre-attack-pattern=\"video capture - t1125\"",
+                "misp-galaxy:ransomware=\"ailock\"",
+                "misp-galaxy:ransomware=\"bravox\"",
+                "misp-galaxy:ransomware=\"genesis\"",
+                "misp-galaxy:ransomware=\"gunra\"",
+                "misp-galaxy:ransomware=\"inc ransom\"",
+                "misp-galaxy:ransomware=\"qilin\"",
+                "misp-galaxy:ransomware=\"termite ransomware\"",
+                "misp-galaxy:ransomware=\"worldleaks\"",
+                "misp-galaxy:sector=\"government, administration\"",
+                "misp-galaxy:sector=\"military\"",
+                "misp-galaxy:sector=\"transport\"",
+                "misp-galaxy:threat-actor=\"coinbase cartel\"",
+                "misp-galaxy:threat-actor=\"dragonforce\"",
+                "misp-galaxy:threat-actor=\"infrastructure destruction squad\"",
+                "misp-galaxy:threat-actor=\"kairos\"",
+                "misp-galaxy:threat-actor=\"krybit\"",
+                "misp-galaxy:threat-actor=\"lapsus\"",
+                "misp-galaxy:threat-actor=\"noname057(16)\"",
+                "misp-galaxy:threat-actor=\"the gentlemen\"",
+                "misp-galaxy:threat-actor=\"z-pentest alliance\"",
+                "ncsc-nl-ndn:feed=\"selected\"",
+                "ncsc-reviewed:automatic",
+                "ncsc-severity:generic",
+                "osint",
+                "osint:source-type=\"blog-post\"",
+                "pap:white",
+                "tlp:clear",
+                "tlp:green",
+                "workflow:state=\"complete\""
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "malware--1a8ae26a-44ce-5c65-a75f-a9df8aa479c6",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-03-27T18:00:12.656Z",
+            "modified": "2026-06-02T11:05:52.789Z",
+            "name": "KRYBIT",
+            "is_family": true,
+            "labels": [
+                "platform:verity471"
+            ],
+            "x_opencti_id": "08abf338-c005-41df-a1f1-b21e44d1d688",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--ba6a107e-4a66-5fd3-833c-43318ba163fd",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        },
+        {
+            "id": "malware--2ebede2c-ae19-5853-bde6-467f453312c8",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.156Z",
+            "modified": "2026-06-02T11:05:56.806Z",
+            "name": "worldleaks",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "cac2afae-0441-4596-a387-219d5c00035c",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "malware--5b434452-8bd4-5ffc-8648-3c9be9242b3e",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.156Z",
+            "modified": "2026-06-02T11:05:56.918Z",
+            "name": "genesis",
+            "description": "Financial interests only.\r<br/>    We do not provide or work with affiliate programs, no collaborations either.\r<br/>    The requested payment must be made within a specified time frame, otherwise the price may be increased, we will begin to publish the data we have about your company and notify the company's customers and suppliers.\r<br/>    Charitable, non-profit, and medical institutions are only hacked if they have reputation gaps known from open sources or discovered in company data. However, this is only data extraction; live support systems are not affected.\r<br/>    Data is always destroyed after payment; we do not attack the same company twice.\r<br/>    Interesting fact: once, the total amount of claims against a breached company exceeded its entire capitalization. We know how to create trouble, though it is in our mutual interest to avoid it.\r<br/>    To make the data leak more valuable, the most important information is published in a separate folder for each company called \u201cparsed\u201d and is also published on darkweb forums.",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "f634f1bb-18d0-41b9-acd8-5a6390c50330",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "intrusion-set--5e9a20dd-7d0f-5ee3-8e58-26b0c7214ef0",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.154Z",
+            "modified": "2026-06-02T11:05:56.271Z",
+            "name": "Infrastructure Destruction Squad",
+            "description": "Dark Engine has emerged as a significant threat actor targeting industrial control systems and SCADA systems in sectors such as metallurgy and food processing. The group has conducted multiple ICS-targeted incidents, with a pronounced operational surge in June 2025. Additionally, Dark Engine is involved in a campaign that embeds fraudulent CAPTCHA prompts into legitimate WordPress sites, utilizing SEO poisoning to harvest login credentials. Reports also indicate a data leak from Dark Engine that exposed sensitive phone data in the U.S.",
+            "aliases": [
+                "Dark Engine"
+            ],
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "41fb4708-7247-48fd-8171-f2254a1aaf20",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "intrusion-set--60892414-c217-518f-a911-143cd1900676",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-05-13T09:14:16.642Z",
+            "modified": "2026-05-13T09:15:37.044Z",
+            "name": "The Gentlemen",
+            "description": "The Gentlemen is a ransomware group that employs a dual-extortion strategy, encrypting sensitive files while exfiltrating critical business data to pressure victims into paying ransoms. Their operations leverage advanced techniques such as abusing legitimate utilities like PowerRun.exe for privilege escalation, using custom-built tools for defense evasion, and employing flexible encryption methods based on file size. The group targets medium to large organizations across various sectors, particularly in the Asia-Pacific region, and has demonstrated a high level of technical maturity and operational discipline. Their activities include systematic compromise of enterprise environments, mass account enumeration, and the use of encrypted channels for data exfiltration.",
+            "labels": [
+                "intrusion-set"
+            ],
+            "x_opencti_id": "b617b865-a89f-4968-abc6-b8779d8bfc0e",
+            "x_opencti_type": "Intrusion-Set",
+            "type": "intrusion-set",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "malware--3409253a-1353-570e-bdc7-04672ddfa7ff",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2026-06-02T11:05:49.155Z",
+            "modified": "2026-06-02T11:05:56.235Z",
+            "name": "ailock",
+            "description": "AiLock is a Ransomware-as-a-Service (RaaS) group first identified in March 2025. It employs a double-extortion approach\u2014encrypting files and threatening to report breaches to regulators or share stolen data with competitors if the ransom isn\u2019t paid. Victims have just 72 hours to respond and up to five days to pay; failure to pay results in data leaks and destruction of recovery tools. The ransomware appends the extension .AiLock to encrypted files, changes file icons to a green padlock with the \u201cAiLock\u201d name, and replaces the desktop wallpaper with a distinctive robot-skull logo. It employs a hybrid encryption scheme, combining ChaCha20 for file encryption with NTRUEncrypt for securing metadata, and uses a multi-threaded design (path-traversal and encryption threads with IOCP) for efficiency. While active campaigns and leak sites are confirmed, specific sectors, regions, and intrusion methods remain undisclosed in public sources.",
+            "is_family": true,
+            "labels": [
+                "ransomware"
+            ],
+            "x_opencti_id": "26c5cd44-d83b-41e4-a58c-0eb7ddf40818",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--6e475735-bb73-5fb3-8868-9cd2cadc07e2",
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+                "marking-definition--7c75b305-bb47-569d-bd4d-12cc8ee4d752"
+            ]
+        },
+        {
+            "id": "identity--e5d74536-8be1-5676-91ed-d41121cd09f8",
+            "spec_version": "2.1",
+            "identity_class": "organization",
+            "name": "NCSC-NL",
+            "created": "2025-03-17T10:33:50.888Z",
+            "modified": "2026-05-28T07:39:36.029Z",
+            "x_opencti_organization_type": "constituent",
+            "x_opencti_reliability": "A - Completely reliable",
+            "labels": [
+                "ncsc-nl",
+                "ncsc-nl-ndn:feed=\"generic\"",
+                "ncsc-nl-netwerk: internationaal",
+                "ncsc-nl-netwerk:cnw",
+                "ncsc-nl-netwerk:egc",
+                "ncsc-nl-netwerk:iwwn",
+                "ncsc-severity:generic",
+                "retention:14d",
+                "type:osint"
+            ],
+            "x_opencti_id": "782be1c1-99ce-407d-9904-505e05be8f09",
+            "x_opencti_type": "Organization",
+            "type": "identity"
+        },
+        {
+            "id": "malware--0a6b2c4c-011e-5833-b822-b367c193983e",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 60,
+            "created": "2022-09-22T22:19:44.000Z",
+            "modified": "2026-06-12T19:01:23.349Z",
+            "name": "AGENDA",
+            "description": "AGENDA is a ransomware family with variants written in both Go and Rust. The malware is highly configurable through command-line arguments, which control features such as target paths, network shares, and whether to terminate processes or services. Execution typically requires a password to be supplied as a command-line argument. Before encryption, AGENDA terminates an extensive list of processes and services and deletes volume shadow copies to ensure file access. It can reboot the infected system into safe mode to circumvent security tools, establishing persistence for this action by creating a value in the RunOnce registry key. The ransomware employs a hybrid encryption scheme, using a unique symmetric key, such as ChaCha20 or AES, for each file. This per-file key is then encrypted with an embedded public RSA key and appended to the encrypted file's content. AGENDA avoids encrypting files and directories specified in a configurable blocklist. Some variants possess network propagation capabilities, including spreading to network shares, using PSExec, or moving through VMware vCenter environments. After encryption, files are renamed with a new extension, and a ransom note is written to each directory. The ransom notes often identify the malware as Qilin, a known alias for the AGENDA family. Certain versions can also change the desktop wallpaper to display a ransom message.",
+            "aliases": [
+                "Agenda",
+                "AGENDA.ESXI",
+                "AgendaCrypt",
+                "Qilin"
+            ],
+            "malware_types": [
+                "ransomware"
+            ],
+            "is_family": true,
+            "last_seen": "2025-12-08T11:28:28.000Z",
+            "capabilities": [
+                "Executes commands from the command line",
+                "Allocates memory",
+                "Can mine data via WMI",
+                "Anti-VM: VirtualBox",
+                "Capture hostname",
+                "Capture memory status",
+                "Capture network configuration",
+                "Anti-VM: Xen",
+                "Anti-debug capabilities",
+                "Capture operating system information",
+                "Calculates SHA-256 hashes",
+                "Calculates MD5 hashes",
+                "Capture disk information",
+                "Communicates using UDP",
+                "Create thread",
+                "Communicates using raw sockets",
+                "Creates processes",
+                "Constructs mutex",
+                "Delete files",
+                "Find files",
+                "Create directories",
+                "Create files",
+                "Encrypts data with RC4",
+                "Enumerate current user",
+                "List files",
+                "Encodes using Base64",
+                "Gets common file path",
+                "Encrypts data with HC-128",
+                "Gets file attribute",
+                "Encrypts data with XOR",
+                "Psuedo random number generation capabilities",
+                "Open Windows registry key",
+                "Read files",
+                "Modify process privileges",
+                "Sleep",
+                "Terminates processes",
+                "Tries to lock mutex",
+                "Persistence via Windows registry Run key",
+                "Reads memory",
+                "Shuts down the system",
+                "Writes memory",
+                "Calculates MurmurHash3 hashes",
+                "Capture system information",
+                "Calculates SHA-1 hashes",
+                "Anti-VM: QEMU",
+                "Anti-VM: VMware",
+                "Calculates SHA-224 hashes",
+                "Decrypts using AES",
+                "Encrypts data with AES",
+                "Encrypts data with AES-256",
+                "Encrypts data with Salsa20",
+                "List process modules",
+                "Encrypts data with Curve25519",
+                "Communicates using pipes",
+                "Modify a service",
+                "Encrypts data with RSA",
+                "List directories",
+                "Change directories",
+                "Create a named pipe",
+                "Move files",
+                "Rename files",
+                "Impersonates user accounts",
+                "Copy files",
+                "Privilege escalation capabilities",
+                "Sets file attribute",
+                "Driver Capabilities",
+                "Query service information",
+                "Stop a service",
+                "Uses hard-coded configuration data",
+                "Writes Windows registry values",
+                "Encrypts data with Blowfish",
+                "List services",
+                "Encrypt or decrypt files",
+                "Encrypts data with ChaCha",
+                "Capture session information",
+                "Deletes Volume Shadow Copy files",
+                "Windows registry capabilities",
+                "Anti-VM: Parallels",
+                "Capture Network Share information",
+                "Sets Wallpaper",
+                "Wipes or overwrites logs",
+                "Writes to log files",
+                "Process injection of DLLs",
+                "Sleep Time Execution",
+                "Anti-VM: VirtualPC"
+            ],
+            "labels": [
+                "malpedia",
+                "platform:verity471",
+                "ransomware"
+            ],
+            "external_references": [
+                {
+                    "source_name": "BushidoToken Qilin RaaS JUN 2024",
+                    "description": "Thomas, W. (2024, June 12). Tracking Adversaries: The Qilin RaaS. Retrieved September 26, 2025.",
+                    "url": "https://blog.bushidotoken.net/2024/06/tracking-adversaries-qilin-raas.html"
+                },
+                {
+                    "source_name": "Sophos Qilin MSP APR 2025",
+                    "description": "Bradshaw, A. et al. (2025, April 1). Qilin affiliates spear-phish MSP ScreenConnect admin, targeting customers downstream. Retrieved September 26, 2025.",
+                    "url": "https://news.sophos.com/en-us/2025/04/01/sophos-mdr-tracks-ongoing-campaign-by-qilin-affiliates-targeting-screenconnect/"
+                },
+                {
+                    "source_name": "SentinelOne Qilin NOV 2022",
+                    "description": "SentinelOne. (2022, November 30). Agenda (Qilin). Retrieved September 26, 2025.",
+                    "url": "https://www.sentinelone.com/anthology/agenda-qilin/"
+                },
+                {
+                    "source_name": "[GTI] Malware Family AGENDA.ESXI",
+                    "description": "Google Threat Intelligence Malware Family Link",
+                    "url": "https://www.virustotal.com/gui/collection/malware--b0d883c3-0178-5f68-a482-0c387c9c213c"
+                },
+                {
+                    "source_name": "Malpedia",
+                    "description": "Reference found in the Malpedia library",
+                    "url": "https://www.trendmicro.com/en_us/research/22/h/new-golang-ransomware-agenda-customizes-attacks.html"
+                },
+                {
+                    "source_name": "External analysis",
+                    "description": "Trend Micro. (2025, October 23). Agenda Ransomware Deploys Linux Variant on Windows Systems Through Remote Management Tools and BYOVD Techniques. Retrieved March 26, 2026.",
+                    "url": "https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html",
+                    "external_id": "1414af25-dbbc-41cf-92dc-54911274fb23"
+                },
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/software/S1242",
+                    "external_id": "S1242"
+                },
+                {
+                    "source_name": "[GTI] Malware Family AGENDA",
+                    "description": "Google Threat Intelligence Malware Family Link",
+                    "url": "https://www.virustotal.com/gui/collection/malware--cd1528ea-a37e-5633-9302-1c7721234411"
+                }
+            ],
+            "x_opencti_id": "c1f6e0d7-7ca3-47b2-a013-da60dfdbda0d",
+            "x_opencti_type": "Malware",
+            "type": "malware",
+            "created_by_ref": "identity--e5d74536-8be1-5676-91ed-d41121cd09f8",
+            "object_marking_refs": [
+                "marking-definition--826578e1-40ad-459f-bc73-ede076f81f37",
+                "marking-definition--44b595da-8e44-5392-8219-e67ebdc5add0"
+            ]
+        }
+    ]
+}
