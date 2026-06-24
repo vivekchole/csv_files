@@ -91,7 +91,7 @@
         }
       },
       "created": "2026-06-01T07:50:52.000Z",
-      "modified": "2026-06-05T14:14:20.580Z",
+      "modified": "2026-06-15T14:14:20.580Z",
       "revoked": false,
       "confidence": 60,
       "lang": "en",
@@ -149,7 +149,7 @@
       ],
       "created_by_ref": "identity--b7dd2019-174b-513e-8549-e20dd91802fb",
       "name": "office.dsns.dp@gmail.com",
-      "description": "PhantomMail: E-mail address used for spearphishing activity",
+      "description": "Updated PhantomMail: E-mail address used for spearphishing activity",
       "pattern": "[email-addr:value = 'office.dsns.dp@gmail.com']",
       "pattern_type": "stix",
       "pattern_version": "2.1",
